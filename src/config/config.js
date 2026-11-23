@@ -219,6 +219,10 @@ const Config = {
   refundInfoLink: env.REACT_APP_REFUND_INFO_LINK || 'https://www.gooddollar.org/restoring-a-fair-gooddollar-ubi-pool/?utm_source=wallet',
   web3Polling: env.REACT_APP_WEB3_POLLING || 30 * 1000, //poll every 30 seconds by default
   realmAppID: env.REACT_APP_REALM_APP_ID || 'wallet_dev-dhiht',
+  // Ownerless on-chain support chat, see docs/SUPPORT_CHAT_PROPOSAL.md
+  supportChatContract: env.REACT_APP_SUPPORT_CHAT_CONTRACT || '',
+  supportChatDeployBlock: parseInt(env.REACT_APP_SUPPORT_CHAT_DEPLOY_BLOCK || 0),
+  supportChatTelegramUrl: env.REACT_APP_SUPPORT_TG_URL || 'https://t.me/GoodDollarX',
   nodeEnv: env.NODE_ENV,
   storeAppIconAndroid: env.STORE_APP_ICON_ANDROID || "/store-app-icon-android.jpg",
   storeAppUrlAndroid: env.STORE_APP_URL_ANDROID || "https://play.google.com/store/apps/details?id=org.gooddollar",

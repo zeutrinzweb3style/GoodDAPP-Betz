@@ -4,6 +4,7 @@ import { SafeAreaView, StyleSheet } from 'react-native'
 import { Provider as PaperProvider } from 'react-native-paper'
 
 import { SimpleStoreDialog } from '../components/common/dialogs/CustomDialog'
+import SupportChat from '../components/chatSupport/SupportChat'
 import LoadingIndicator from '../components/common/view/LoadingIndicator'
 
 import RouterSelector from '../RouterSelector'
@@ -36,6 +37,7 @@ export const App = () => {
           <SimpleStoreDialog />
           <LoadingIndicator />
           <RouterSelector />
+          <SupportChat />
         </AppContext>
       </AppWrapper>
     </PaperProvider>
